@@ -1,0 +1,1008 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(8, 6, 6);
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 5rem);
+}
+header {    
+    width: 100%;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    padding: 2% 5%;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 999;
+}
+nav h1 {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    margin-left: 50px;
+    color: white;
+}
+nav ul {
+    text-align: right;
+    flex: 1;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 540;
+    font-size: 18px;
+}
+nav ul li a::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: .5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+.container {
+    display: flex;
+    margin: 90px 0px;
+} 
+.container .main {
+    max-width: 1000px;
+    margin: auto;
+}
+.container .main h1 {
+    color: rgb(250, 225, 0);
+    margin-top: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+.container .main h3 {
+    position: absolute;
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    
+}
+.container .main #lm {
+    position: relative;
+    left: 147px;
+    color: rgb(204, 17, 17);
+}
+.btn {
+    position: relative;
+    top: 50px;
+    left: 200px;
+    width: 200px;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border-color: none;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.about-me {
+    display: flex;
+    margin: 100px 0px;
+}
+.about-me .main-content {
+    width: 1000px;
+    margin: auto;
+}
+.about-me .main-content h1 {
+    color: rgb(245, 244, 244);
+    display: flex;
+    margin: auto;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 87px;
+}
+.about {
+    display: flex;
+    margin: 100px 0px;
+}
+.about .main-content-about {
+    width: 1000px;
+    margin: auto;
+}
+.about .main-content-about h1 {
+color: white;
+display: flex;
+margin: auto;
+margin-left: 250px;
+margin-bottom: 50px;
+border-bottom: 3px solid #ff0000;
+width: 86px;   
+}
+.about .main-content-about .skills {
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    width: 500px;
+    height: 25rem; 
+    transition: .4s ease-in-out;
+}
+.about .main-content-about  .skills p {
+    width: 400px;
+    text-align: center;
+    margin-left: 2rem;
+}
+.about-me .main-content-service {
+    width: 1000px;
+    margin: auto;
+}
+.about-me .main-content-service .skills:hover {
+    background-color: rgb(255, 17, 0);
+}
+.about-me .main-content-service h1{
+    color: white;
+    display: flex;
+    margin: auto;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #ff0000;
+    width: 110px;
+}
+.about-me .main-content-service .skills {
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-left: 30px;
+    transition: .4s ease-in-out;
+}
+.skills {
+  float: left;
+  right: 140px;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 300px;
+  height: 220px;
+  margin-bottom: 50px;
+  background-color: black;
+  border-radius: 5px;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+.skills:hover {
+    transform: scale(1.1);
+}
+.skills h2 {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  padding-top: 1rem;
+  font-size: 18px;
+  color: #fff;
+}
+.skills  p {
+    margin-top: 20px;
+    text-align: center;
+    color: #555;
+    width: 270px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;   
+}
+.about-me-2 {
+    display: flex;
+    margin: 100px 0px;
+}
+.about-me-2 .main-content-2 {
+    width: 1000px;
+    margin: auto;
+}
+.about-me-2 .main-content-2 h1 {
+    color: white;
+    display: flex;
+    margin: auto;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #ff0000;
+    width: 98px;
+}
+.about-me-3 {
+    display: flex;
+    margin: 100px 0px;
+    }
+.about-me-3 .main-content-3 {
+    width: 1000px;
+    margin: auto;
+}
+.about-me-3 .main-content-3 h1 {
+    color: white;
+    display: flex;
+    margin: auto; 
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #ff0000;
+    width: 135px;
+}
+.about-me-3 .main-content-3 .contact-me {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.about-me-3 .main-content-3 .contact-me  li {
+    display: inline-block;
+    color: #fff;
+    font-style: none;
+    text-align: center;
+    flex: 1;
+
+}
+.about-me-3 .main-content-3 .contact-me li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.download {
+    position: relative;
+    top: 90px;
+    left: 400px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 80px;
+    border-color: transparent;
+    background-color: rgb(0, 179, 0);
+    color: white;
+    border-color: none;
+    cursor: pointer;
+}
+.container-2 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    width: 100%;
+}
+.container-2 .main-2 {
+    max-width: 1000px;
+    margin: auto;
+}
+.container-2 .main-2 h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 773px) {
+   
+}
+@media screen and (max-width: 881px) {
+
+    nav h1 {
+        font-size: 100%;
+        margin-top: 10px;
+    }
+    nav ul li a{
+        font-size: 100%;
+    }
+    .about .main-content-about .skills  {
+        margin-left: 200px;
+    }
+    .about-me .main-content-service h1{
+       
+        margin-left: 150px;
+    }
+    .about-me .main-content-service .skills {
+        margin-left: 100px;
+    }
+
+    .about-me-2 .main-content-2 h1{
+       
+        margin-left: 150px;
+    }
+    .about-me-2 .main-content-2 .skills {
+        margin-left: 100px;
+    }
+
+    .about-me-3 .main-content-3 .contact-me li a i {
+        font-size: 100%;
+    }
+
+    .about-me-3 .main-content-3 .contact-me li a  {
+        font-size: 100%;
+    }
+
+    .about-me-3 .main-content-3 button{
+        position: relative;
+        left: 350px;
+    }
+    hr {
+        width: 100%;
+    }
+    .about .main-content-about h1  {
+        margin-left: 340px;
+    }
+    .about-me .main-content-service h1 {
+        margin-left: 340px;
+    }
+    .about-me-2 .main-content-2 h1 {
+        margin-left: 350px;
+    }
+    .container .main {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    .container .main h1 {
+        position: relative;
+        left: 90px;
+    }
+    .container .main .btn {
+        position: relative;
+        left: 100px;
+    }
+}
+@media screen and (max-width: 816px) {
+
+    nav h1 {
+        font-size: 100%;
+        margin-top: 10px;
+    }
+    nav ul li a{
+        font-size: 100%;
+    }
+    .about .main-content-about .skills  {
+        margin-left: 170px;
+    }.about .main-content-about .skills  {
+        margin-left: 170px;
+    }
+    .about-me .main-content-service h1{
+       
+        margin-left: 150px;
+    }
+    .about-me .main-content-service .skills {
+        margin-left: 70px;
+    }
+
+    .about-me-2 .main-content-2 h1 {
+        margin-left: 150px;
+    }
+    .about-me-2 .main-content-2 .skills {
+        margin-left: 70px;
+    }
+
+    .about-me-3 .main-content-3 .contact-me li a i {
+        font-size: 100%;
+    }
+
+    .about-me-3 .main-content-3 .contact-me li a  {
+        font-size: 100%;
+    }
+
+    .about-me-3 .main-content-3 button{
+        position: relative;
+        left: 350px;
+    }
+    hr {
+        width: 100%;
+    }
+    .about .main-content-about h1  {
+        margin-left: 340px;
+    }
+    .about-me .main-content-service h1 {
+        margin-left: 340px;
+    }
+    .about-me-2 .main-content-2 h1 {
+        margin-left: 350px;
+    }
+    .container .main {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    .container .main h1 {
+        position: relative;
+        left: 90px;
+    }
+    .container .main .btn {
+        position: relative;
+        left: 100px;
+    }
+    .about-me-3 .main-content-3 .download {
+        left: 300px;
+    }
+}
+
+@media screen and (max-width: 773px) {
+
+    nav {
+        width: 100%;
+    }
+    nav h1 {
+        padding-top: 10px; 
+        font-size: 100%;
+    }
+    #pogs {
+        display: flex;
+    }
+    #nav{
+        display: none;
+    }
+    .fa-equals {
+        display: block;
+    }
+    .about .main-content-about h1  {
+        margin-left: 340px;
+    }
+    .about .main-content-about .skills  {
+        margin-left: 135px;
+    }
+    .about-me .main-content-service h1 {
+        margin-left: 340px;
+    }
+    .about-me-2 .main-content-2 h1 {
+        margin-left: 350px;
+    }
+    .container .main {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    .container .main h1 {
+        position: relative;
+        left: 90px;
+    }
+    .container .main .btn { 
+        position: relative;
+        left: 100px;
+        border-color: transparent;
+    }
+    .about-me-3 .main-content-3 .download {
+        left: 290px;
+    }
+ 
+}
+@media screen and (max-width: 756px) {
+    
+    nav h1 {
+        margin-top: 0px;
+    }
+    .container .main h1{
+        position: relative;
+        margin-left: 0px;
+        width: 400px;
+        padding-left: 0px;
+    }
+    .about .main-content-about .skills{
+        margin-left: 130px;
+       
+    }
+    .about-me .main-content-service .skills {
+        margin-left: 40px;
+    }
+    .about-me-2 .main-content-2 .skills {
+        margin-left: 50px;
+    }
+    .about-me-3 .main-content-3 .contact-me li a i {
+        font-size: 100%;
+    }
+
+    .about-me-3 .main-content-3 .contact-me li a  {
+        font-size: 100%;
+    }
+
+    .about-me-3 .main-content-3 button{
+        position: relative;
+        left: 270px;
+    }
+}
+
+@media screen and (max-width: 714.55px) {
+
+    nav h1 {
+        margin-top: 0px;
+    }
+
+    .about-me .main-content-service .skills{
+        margin-left: 40px;
+       
+    }
+    .about-me-2 .main-content-2 .skills {
+        margin-left: 35px;
+    }
+}
+
+@media screen and (max-width: 696px) {
+
+    .about-me .main-content-service h1{
+        margin-left: 270px;
+       
+    }
+
+    .about-me .main-content-service .skills{
+        margin-left: 20px;
+       
+    }
+
+    .about-me-2 .main-content-2 h1{
+        margin-left: 270px;
+       
+    }
+
+    .about-me-2 .main-content-2 .skills {
+        margin-left: 25px;
+    }   
+    .about-me-3 .main-content-3 .download {
+        left: 250px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .about .main-content-about h1 {
+        text-align: center;
+        margin-left: 280px;
+    }
+    .about .main-content-about .skills {
+        margin-left: 80px;
+    }
+}
+
+@media  screen and (max-width: 656px) {
+
+
+    .about .main-content-about h1{
+        margin-left: 270px;
+       
+    }
+    .about .main-content-about .skills {
+        margin-left: 60px;
+    }
+
+    .about-me .main-content-service h1{
+        margin-left: 270px;
+       
+    }
+
+    .about-me .main-content-service .skills{
+        margin-left: 10px;
+       
+    }
+
+    .about-me-2 .main-content-2 h1{
+        margin-left: 270px;
+       
+    }
+
+    .about-me-2 .main-content-2 .skills {
+        margin-left: 7px;
+    }   
+
+}
+
+@media screen and (max-width: 649px) {
+    
+    .about .main-content-about .skills{
+        margin-left: 70px;
+       
+    }
+}
+
+@media screen and (max-width: 636px) {
+
+    .about .main-content-about h1 {
+        margin-left: 250px;
+    }
+    .about .main-content-about .skills {
+        position: relative;
+        right: 20px;
+        width: 400px;
+        margin-left: 140px;
+        
+    }
+    .about .main-content-about .skills p {
+        width: 380px;
+        margin-left: 0px;
+    }
+    .about-me .main-content-service h1 {
+        margin-left: 250px;
+    }   
+
+    .about-me .main-content-service .skills{
+        margin-left: 10px;
+    }
+
+    .about-me-2 .main-content-2  h1 {
+        margin-left: 250px;
+    }   
+
+    .about-me-2 .main-content-2 .skills{
+        margin-right: 10px;
+    }
+
+    .about-me-3 .main-content-3 .download {
+        position: relative;
+        left: 200px;
+    }
+   
+}
+@media screen and (max-width: 630px) {
+    
+    .about-me .main-content-service h1 {
+        margin-left: 250px;
+    }   
+
+    .about-me .main-content-service .skills{
+        margin-left: 10px;
+    }
+    .about-me-2 .main-content-2 .skills{
+        margin-left: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 619px) {
+    .about-me .main-content-service .skills{
+        width: 350px;
+        height: 250px;
+        padding-top: 20px;
+        margin-left: 130px;
+    }
+    .about-me .main-content-service .skills p {
+        text-align: center;
+        margin-left: 35px;
+    }
+    .about-me-2 .main-content-2 .skills{
+        width: 350px;
+        height: 250px;
+        padding-top: 20px;
+        margin-left: 130px;
+    }
+    .about-me-2 .main-content-2 .skills img {
+        position: relative;
+        left: 25px;
+    }
+    .about-me-2 .main-content-2 .skills p {
+        text-align: center;
+        margin-left: 35px;
+    }
+}
+
+
+
+@media screen and (max-width: 567px) {
+
+   
+    .container .main {
+        width: 200px;
+    }
+    .container .main .btn {
+        margin-left: 0px;
+    }
+    .about .main-content-about h1 {
+        margin-left: 240px;
+    }
+    .about .main-content-about .skills {
+        margin-left: 100px;
+    }
+    .about-me .main-content-service h1 {
+        margin-left: 220px;
+    }
+    .about-me .main-content-service .skills{
+        width: 350px;
+        height: 250px;
+        padding-top: 20px;
+        margin-left: 100px;
+    }
+    .about-me-2 .main-content-2 h1 {
+        margin-left: 220px;
+    }
+    .about-me-2 .main-content-2 .skills{
+        width: 350px;
+        height: 250px;
+        padding-top: 20px;
+        margin-left: 100px;
+    }
+    .about-me-3 .main-content-3 .download {
+        position: relative;
+        left: 150px;
+    }
+
+}
+
+@media screen and (max-width: 563px) {
+
+   
+    .container .main {
+        width: 200px;
+    }
+    .container .main .btn {
+        margin-left: 0px;
+    }
+    .about .main-content-about h1 {
+        margin-left: 240px;
+    }
+    .about .main-content-about .skills {
+        margin-left: 100px;
+    }
+    .about-me .main-content-service h1 {
+        margin-left: 220px;
+    }
+    .about-me .main-content-service .skills{
+        width: 350px;
+        height: 250px;
+        padding-top: 20px;
+        margin-left: 100px;
+    }
+    .about-me-2 .main-content-2 h1 {
+        margin-left: 220px;
+    }
+    .about-me-2 .main-content-2 .skills{
+        width: 350px;
+        height: 250px;
+        padding-top: 20px;
+        margin-left: 100px;
+    }
+    .about-me-3 .main-content-3 .download {
+        position: relative;
+        left: 150px;
+    }
+
+}
+@media screen and (max-width: 504px) {
+    .container .main {
+        width: 0px;
+    }
+    .container .main h1 {
+        width: 0px;
+        display: flex;
+    }
+
+    .about .main-content-about h1 {
+        margin-left: 200px;
+    }
+    .about .main-content-about .skills {
+        margin-left: 65px;
+    }
+    .about-me .main-content-service h1 {
+        margin-left: 200px;
+    }
+    .about-me .main-content-service .skills{
+        width: 350px;
+        height: 250px;
+        padding-top: 20px;
+        margin-left: 65px;
+    }
+    .about-me-2 .main-content-2 h1 {
+        margin-left: 200px;
+    }
+    .about-me-2 .main-content-2 .skills{
+        width: 350px;
+        height: 250px;
+        padding-top: 20px;
+        margin-left: 65px;
+    }
+   
+}
+@media screen and (max-width: 487px){
+    .about .main-content-about .skills {
+        margin-left: 100px;
+        width: 350px;
+        height: 500px;
+    }
+    .about .main-content-about .skills p {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 434.55px) {
+    .container .main {
+        width: 0px;
+    }
+    .container .main h1 {
+        width: 0px;
+    }
+    .container .main #hi {
+        font-size: 20px;
+    }
+   .container .main #lm {
+    font-size: 20px;
+    position: relative;
+    margin-left: 40px;
+   }
+
+   .about .main-content-about h1 {
+    margin-left: 150px;
+   }
+   
+   .about .main-content-about .skills {
+    margin-left: 50px;
+   }
+
+   .about .main-content-about .skills p {
+    position: relative;
+    font-size: 15px;
+    left: 20px;
+    width: 280px;
+    padding-left: 0px;
+   }
+   
+   .about-me .main-content-service h1 {
+    margin-left: 150px;
+   }
+
+   .about-me .main-content-service .skills {
+    margin-left: 45px;
+   }
+   .about-me-2 .main-content-2 .skills {
+    margin-left: 45px;
+   }
+   .about-me-3 .main-content-3 .contact-me li  {
+    font-size: 100%;
+   }
+   .about-me-3 .main-content-3 .contact-me li a {
+    font-size: 90%;
+   }
+   .about-me-3 .main-content-3 .contact-me li a i {
+    font-size: 95%;
+   }
+   .about-me-3 .main-content-3 .download {
+    position: relative;
+    left: 100px;
+   }
+}
+
+@media screen and (max-width: 425px) {
+    .about .main-content-about .skills {
+        margin-left: 10px;
+    }
+    .about .main-content-service {
+        margin-left: 10px;
+    }
+    .about-me .main-content-service .skills {
+        margin-left: 10px;
+        left: 0px;
+    }
+    .about-me-2 .main-content-2 .skills {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .about-me .main-content-service .skills {
+        margin-left: 0px;
+    }
+
+    .about-me-2 .main-content-2 h1 {
+        margin-left: 150px;
+    }
+    .about-me-2 .main-content-2 .skills {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
+    #mb-down {
+        display: block;
+    }
+    .container .main h1 {
+        margin-left: 0px;
+    }
+    .about-me-3 .main-content-3 .contact-me li a {
+        display: none;
+    }
+
+    .about .main-content-about .skills {
+        margin-left: 5px;
+        width: 350px
+    }
+    .about-me .main-content-service {
+        margin-left: 0px;
+    }
+    .about-me-2 .main-content-2 .skills {
+        margin-left: 0px;
+    }
+    .about-me-3 .main-content-3 .download {
+        margin-left: 0px;
+    }
+    .about-me-3 .main-content-3 .contacts {
+        display: flex;
+    }
+    .about-me-3 .main-content-3 .contacts #cnt {
+        display: flex;
+    }
+    #ph {
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 346px) {
+
+    .container .main {
+        width: 0px;
+    }
+    .container .main h1 {
+        position: relative;
+        left: 30px;
+        width: 0px;
+    }
+    .container .main #hi {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+   .container .main #lm {
+    font-size: 20px;
+    position: relative;
+    margin-left: 0px;
+   }
+   .container .main .btn {
+    position: relative;
+    left: 40px;
+   }
+   .about .main-content-about h1 {
+    margin-left: 100px;
+   }
+   .about .main-content-about .skills {
+    margin-left: 0px;
+   }
+   .about-me .main-content-service h1 {
+    margin-left: 100px;
+   }
+    .about-me .main-content-service .skills {
+        margin-left: 0px;
+       }
+       .about-me-2 .main-content-2 h1 {
+        margin-left: 100px;
+       }
+       .about-me-2 .main-content-2 .skills {
+        margin-left: 0px;
+       }
+       .about-me-3 .main-content-3 {
+        width: 100%;
+        margin-right: 0px;
+       }
+       .about-me-3 .main-content-3 .contact-me li  {
+        font-size: 100%;
+       }
+       .about-me-3 .main-content-3 .contact-me li a {
+        font-size: 0%;
+        margin-left: 0px;
+       }
+       .about-me-3 .main-content-3 .contact-me li a i {
+        font-size: 0%;
+        margin-left: 0px;
+
+       }
+       .about-me-3 .main-content-3 .download {
+        position: relative;
+        left: 70px;
+       }
+       .container-2 {
+        width: 100%;
+        width: 330px;
+       }
+    
+
+}
