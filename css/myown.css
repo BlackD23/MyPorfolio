@@ -1007,11 +1007,7 @@ width: 86px;
     .container .main .btn {
         margin-left: 0px;
         left: 50px;
-    }
-
-    .about-me-3 .main-content-3 .contact-me li a {
-        display: none;
-    }
+    }    
     .about .main-content-about h1 {
         margin-left: 120px;
     }
@@ -1035,15 +1031,14 @@ width: 86px;
         margin-right: 0px;
         left: 0px;
     }
-
     .your-project .project input {
         width: 280px;
-        margin-left: 30px;
+        margin-left: 18px;
     }
     
     .your-project .project textarea {
         width: 280px;
-        margin-left: 30px;
+        margin-left: 18px;
     }
 
 }
@@ -1171,8 +1166,7 @@ width: 86px;
         .about-me .main-content-service .skills p {
             position: relative;
             left: 0px;
-            margin-top: 5px;
-            width: 195px;
+            margin-top: 5px
             margin-left: 10px;
         }
         .about-me-2 .main-content-2 .skills {
